@@ -76,12 +76,12 @@ a {
     font-size: 2rem;
 }
 
-.pre-title {
+/* .pre-title {
     text-transform: uppercase;
     letter-spacing: .5rem;
     color: var(--secondaryTextColor);
     position: relative;
-    padding-left: 40px;
+    padding-left:  40px;
     width: fit-content;
     font-weight: 400;
     font-size: 0.rem;
@@ -97,6 +97,49 @@ a {
     left: 0;
     top: 50%;
 }
+
+.pre-title:after {
+    content: "";
+    width: 30px;
+    height: 1px;
+    background-color: var(--lineColor);
+    position: absolute;
+    display: block;
+    right: 0;
+    top: 50%;
+} */
+
+.pre-title {
+    text-transform: uppercase;
+    letter-spacing: .5rem;
+    color: var(--secondaryTextColor);
+    position: relative;
+    padding: 0 40px; /* padding kiri dan kanan agar teks di tengah */
+    width: fit-content;
+    font-weight: 400;
+    font-size: 1rem; /* pastikan font-size diatur sesuai kebutuhan */
+}
+
+.pre-title:before, 
+.pre-title:after {
+    content: "";
+    width: 30px;
+    height: 1px;
+    background-color: var(--lineColor);
+    position: absolute;
+    top: 50%;
+}
+
+.pre-title:before {
+    left: 0;
+    transform: translateX(-10%);
+}
+
+.pre-title:after {
+    right: 0;
+    transform: translateX(10%);
+}
+
 
 /* Layout */
 .grid-3 {
@@ -186,19 +229,19 @@ nav ul li a {
     padding: var(--sectionPadding);
 }
 
-.services .pre-title {
-    margin: 0 auto;
-}
-
-.services-title {
-    text-align: center;
-}
-
 .services {
     padding: 3rem 2rem;
     text-align: center;
     background: var(--primaryBackgroundColor);
     border-radius: var(--itemBorderRadius);
+}
+
+.services .pre-title {
+    margin: 0 auto;
+}
+
+.services .section-title {
+    text-align: center;
 }
 
 .services h4 {
@@ -220,7 +263,7 @@ nav ul li a {
 }
 
 /* Portofolio Section */
-#portofolios {
+#portofolio {
     padding: var(--sectionPadding);
 }
 
@@ -228,6 +271,15 @@ nav ul li a {
     border-radius: var(--itemBorderRadius);
     overflow: hidden;
     border: 1px solid var(--borderColor);
+}
+
+.portofolio .pre-title {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.portofolio .section-title {
+    text-align: center;
 }
 
 .portofolio-cover {
