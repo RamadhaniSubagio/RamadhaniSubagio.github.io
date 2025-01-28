@@ -6,7 +6,7 @@
     --lineColor: #d9d9d9;
 
     --primaryBackgroundColor: #fff;
-    --secondaryBackgroundColor: #fbfbfb;
+    --secondaryBackgroundColor: #fafafa;
     --thirdBackgroundColor: #f5f3fe;
 
     --primaryIconColor: #3B367D;
@@ -76,39 +76,6 @@ a {
     font-size: 2rem;
 }
 
-/* .pre-title {
-    text-transform: uppercase;
-    letter-spacing: .5rem;
-    color: var(--secondaryTextColor);
-    position: relative;
-    padding-left:  40px;
-    width: fit-content;
-    font-weight: 400;
-    font-size: 0.rem;
-}
-
-.pre-title:before {
-    content: "";
-    width: 30px;
-    height: 1px;
-    background-color: var(--lineColor);
-    position: absolute;
-    display: block;
-    left: 0;
-    top: 50%;
-}
-
-.pre-title:after {
-    content: "";
-    width: 30px;
-    height: 1px;
-    background-color: var(--lineColor);
-    position: absolute;
-    display: block;
-    right: 0;
-    top: 50%;
-} */
-
 .pre-title {
     text-transform: uppercase;
     letter-spacing: .5rem;
@@ -118,6 +85,7 @@ a {
     width: fit-content;
     font-weight: 400;
     font-size: 1rem; /* pastikan font-size diatur sesuai kebutuhan */
+    transition: color 0.2s ease-in-out;
 }
 
 .pre-title:before, 
@@ -245,9 +213,9 @@ nav ul li a {
 }
 
 .services h4 {
-    margin: 1.5rem 0;
-    font-weight: 500;
-    font-size: 1.05rem;
+    margin: 1.00rem 0;
+    font-weight: 600;
+    font-size: 1.2rem;
 }
 
 .service-icon {
@@ -306,6 +274,13 @@ nav ul li a {
 .portofolio h4 {
     font-weight: 500;
     font-size: 1.05rem;
+    margin: 1.00rem 0;
+}
+
+.portofolio h2 {
+    font-weight: 600;
+    font-size: 1.4rem;
+    margin: 0.5rem 0;
 }
 
 .portofolio-title a svg:hover {
