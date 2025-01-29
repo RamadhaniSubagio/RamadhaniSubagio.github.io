@@ -6,7 +6,7 @@
     --lineColor: #d9d9d9;
 
     --primaryBackgroundColor: #fff;
-    --secondaryBackgroundColor: #fafafa;
+    --secondaryBackgroundColor: #f7f7f7;
     --thirdBackgroundColor: #f5f3fe;
 
     --primaryIconColor: #3B367D;
@@ -26,7 +26,7 @@ html {
 }
 
 body {
-    font-family: "Poppins", Regular;
+    font-family: "Poppins", sans-serif;
 }
 
 h1,h2,h3,h4,h5,h6, strong{

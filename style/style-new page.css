@@ -1,0 +1,231 @@
+:root {
+    --primaryTextColor: #232e35; /*Untuk title atau judul */
+    --secondaryTextColor: #656d72; /*Untuk text biasa seperti paragraph*/
+
+    --borderColor: #f1f1f1;
+    --lineColor: #d9d9d9;
+
+    --primaryBackgroundColor: #fff;
+    --secondaryBackgroundColor: #f7f7f7;
+    --thirdBackgroundColor: #f5f3fe;
+
+    --primaryIconColor: #3B367D;
+    --primaryIconColorOver: #5d51e8;
+
+    --sectionPadding: 1rem 0;
+    --itemBorderRadius: 0.7rem;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6, strong{
+    color: var(--primaryTextColor) ;
+}
+
+p {
+    font-size: 1rem; /*16pixel*/
+    line-height: 1.9rem;
+}
+
+p, span, label, input, textarea, li {
+    color: var(--secondaryTextColor);
+}
+
+a {
+    text-decoration: none;
+}
+
+.main-container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 1200px) {
+    .main-container {
+        width: 90%;
+    }
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem auto;
+}
+
+.nav ul {
+    list-style: none; /*Untuk menghilangkan list titik*/
+    display: flex;
+    gap: 0.9rem;
+}
+
+nav ul li {
+    display: flex;
+    align-items: center;
+}
+
+nav ul li a {
+    color: var(--primaryTextColor);
+}
+
+/* Subagio Property */
+#SubagioProperty {
+    background-color: var(--secondaryBackgroundColor);
+    align-items: center;
+    padding: 2rem 0; /* Mengurangi padding atas dan bawah */
+}
+
+.SubagioProperty {
+    padding: 1rem 2rem;
+    text-align: center;
+    background: var(--primaryBackgroundColor);
+    border-radius: var(--itemBorderRadius);
+}
+
+.SubagioProperty .section-title {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.SubagioProperty .description {
+    text-align: justify; /* Rata kiri dan kanan */
+    max-width: 1200px;  /* Batasi lebar agar nyaman dibaca */
+    margin: 0 auto;    /* Posisikan di tengah */
+    line-height: 1.6;  /* Tambahkan jarak antar baris */
+}
+
+
+.SubagioProperty .image-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Membuat 3 kolom sejajar */
+    gap: 20px;
+    max-width: 1200px; /* Batasi lebar maksimal */
+    margin: 0 auto; /* Agar ada di tengah */
+    padding: 20px;
+}
+
+.SubagioProperty .image-gallery img {
+    width: 100%; /* Pastikan gambar penuh dalam kolom */
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px; /* Tambahkan sudut melengkung */
+    transition: transform 0.3s ease-in-out;
+}
+
+.SubagioProperty .image-gallery img:hover {
+    transform: scale(1.05); /* Efek membesar saat hover */
+}
+
+/*UX DESIGN*/
+#UXDesign {
+    padding: var(--sectionPadding);
+    align-items: center;
+    padding: 2rem 0; /* Mengurangi padding atas dan bawah */
+}
+
+.UXDesign {
+    padding: 1rem 2rem;
+    text-align: left;
+    background: var(--primaryBackgroundColor);
+    border-radius: var(--itemBorderRadius);
+}
+
+.UXDesign .section-title {
+    text-align: center;
+    /* font-size: 2rem; */
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.UXDesign .description {
+    text-align: justify; /* Rata kiri dan kanan */
+    max-width: 1200px;  /* Batasi lebar agar nyaman dibaca */
+    margin: 10px;    /* Posisikan di tengah */
+    line-height: 1.6;  /* Tambahkan jarak antar baris */
+}
+
+.UXDesign .image-gallery {
+    display: grid;
+    gap: 20px;
+    max-width: 1200px; /* Batasi lebar maksimal */
+    margin: 0 auto; /* Agar ada di tengah */
+    padding: 20px;
+}
+
+.UXDesign .image-gallery img {
+    width: 100%; /* Pastikan gambar penuh dalam kolom */
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px; /* Tambahkan sudut melengkung */
+    transition: transform 0.4s ease-in-out;
+}
+
+.UXDesign .image-gallery img:hover {
+    transform: scale(1.05); /* Efek membesar saat hover */
+}
+
+/*UI Design*/
+#UIDesign {
+    background-color: var(--secondaryBackgroundColor);
+    align-items: center;
+    padding: 2rem 0; /* Mengurangi padding atas dan bawah */
+}
+
+.UIDesign {
+    padding: 1rem 2rem;
+    text-align: center;
+    background: var(--primaryBackgroundColor);
+    border-radius: var(--itemBorderRadius);
+}
+
+.UIDesign .image-gallery {
+    display: grid;
+    gap: 20px;
+    max-width: 1200px; /* Batasi lebar maksimal */
+    margin: 0 auto; /* Agar ada di tengah */
+    padding: 20px;
+}
+
+.UIDesign .image-gallery img {
+    width: 100%; /* Pastikan gambar penuh dalam kolom */
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px; /* Tambahkan sudut melengkung */
+    transition: transform 0.4s ease-in-out;
+}
+
+.UIDesign .image-gallery img:hover {
+    transform: scale(1.05); /* Efek membesar saat hover */
+}
+
+/* Footer */
+.footer-icons {
+    padding: 4rem 0;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.footer-icons a {
+    margin: 0.5rem;
+}
+
+.footer-icons svg {
+    fill: #3e3f40;
+}
+
+.footer-icons a:hover svg {
+    fill: #000;
+}
