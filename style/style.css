@@ -169,7 +169,7 @@ nav ul li a {
 
 /* Hero Section */
 #hero {
-    height: 720px;
+    height: 650px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
@@ -188,20 +188,36 @@ nav ul li a {
 
 .hero-right {
     display: flex;
-    justify-content: center;
+    justify-content: right;
 }
 
 /* Serices Section */
 #services {
     background-color: var(--secondaryBackgroundColor);
     padding: var(--sectionPadding);
+    padding: 2rem 0;
 }
 
 .services {
-    padding: 3rem 2rem;
-    text-align: center;
+    padding: 2rem 0;
+    text-align: justify;
     background: var(--primaryBackgroundColor);
     border-radius: var(--itemBorderRadius);
+    margin: 0 auto;
+}
+
+.services-main-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 0 2rem;
+}
+
+.services-grid-3 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 4rem; /* Beri jarak antar card */
+    padding: 0 4rem; /* Jarak kiri & kanan */
 }
 
 .services .pre-title {
@@ -216,6 +232,7 @@ nav ul li a {
     margin: 1.00rem 0;
     font-weight: 600;
     font-size: 1.2rem;
+    text-align: center;
 }
 
 .service-icon {
@@ -233,16 +250,18 @@ nav ul li a {
 /* Portofolio Section */
 #portofolio {
     padding: var(--sectionPadding);
+    padding: 2rem 0;
 }
 
 .portofolio {
     border-radius: var(--itemBorderRadius);
     overflow: hidden;
     border: 1px solid var(--borderColor);
+    background-color: var(--primaryBackgroundColor);
 }
 
 .portofolio .pre-title {
-    margin: 0 auto;
+    margin: 1.5rem auto;
     text-align: center;
 }
 
@@ -252,6 +271,13 @@ nav ul li a {
 
 .portofolio-cover {
     height: 250px;
+}
+
+.portofolio-grid-3 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem; /* Beri jarak antar card */
+    padding: 0 2rem; /* Jarak kiri & kanan */
 }
 
 .portofolio-cover img {
@@ -304,8 +330,36 @@ nav ul li a {
     color: var(--secondaryTextColor);
 }
 
+/* Buttons lihat selengkapnya */
+.btn-container {
+    display: flex;
+    justify-content: center; /* Pusatkan tombol */
+    margin-top: 2rem; /* Tambahkan jarak atas */
+}
+
+.btn-viewmore {
+    margin: 2rem;
+    padding: 1rem 1.5rem;
+    background: var(--primaryBackgroundColor);
+    border: 1.5px solid var(--primaryIconColorOver);
+    border-radius: 8px;
+    color: var(--primaryIconColorOver);
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, 
+                color 0.3s ease-in-out, 
+                box-shadow 0.3s ease-in-out, 
+                transform 0.3s ease-in-out;
+}
+
+.btn-viewmore:hover {
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1); /* Efek bayangan lembut */
+    transform: scale(1.05); /* Efek sedikit membesar */
+}
+
+
 /* Skill & Education */
-#skills {
+/* #skills {
     padding: var(--sectionPadding);
     background: var(--secondaryBackgroundColor);
 }
@@ -339,10 +393,10 @@ nav ul li a {
 .education-year {
     margin: 0.6rem;
     margin-bottom: 3rem;
-}
+} */
 
 /* List DOT */
-.education .line div:before {
+/* .education .line div:before {
     content: "";
     width: 15px;
     height: 15px;
@@ -362,7 +416,7 @@ nav ul li a {
 .skill-right ul {
     line-height: 2rem;
     padding: 0 1rem;
-}
+} */
 
 /* Contacts */
 #contacts {
@@ -403,7 +457,7 @@ nav ul li a {
 }
 
 .btn-submit {
-    width: 100%;
+    width: 97.5%;
     padding: .75rem 1.3rem;
     background-color: var(--primaryIconColorOver);
     color: #fff;
