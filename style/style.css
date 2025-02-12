@@ -258,6 +258,7 @@ nav ul li a {
     overflow: hidden;
     border: 1px solid var(--borderColor);
     background-color: var(--primaryBackgroundColor);
+    text-align: justify;
 }
 
 .portofolio .pre-title {

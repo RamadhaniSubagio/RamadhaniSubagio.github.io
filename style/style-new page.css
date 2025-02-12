@@ -107,7 +107,6 @@ nav ul li a {
     line-height: 1.6;  /* Tambahkan jarak antar baris */
 }
 
-
 .SubagioProperty .image-gallery {
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* Membuat 3 kolom sejajar */
