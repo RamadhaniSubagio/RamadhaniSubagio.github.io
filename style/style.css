@@ -27,6 +27,7 @@ html {
 
 body {
     font-family: "Poppins", sans-serif;
+    padding-top: 5rem; /* Sesuaikan dengan tinggi header */
 }
 
 h1,h2,h3,h4,h5,h6, strong{
@@ -117,16 +118,42 @@ a {
 }
 
 /* Logo and Navigation Menu*/
-.nav {
+/* .nav {
     display: flex;
     justify-content: space-between;
     padding: 2rem 0;
+} */
+
+.nav {
+    position: fixed; /* Agar tetap di atas saat discroll */
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: white; /* Pastikan background tidak transparan */
+    z-index: 1000; /* Supaya tidak tertutup elemen lain */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Tambahkan efek bayangan */
+    padding: 25px 0; /* Atur padding supaya tidak terlalu besar */
+}
+
+.main-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    padding: 0 2rem;
 }
 
 .nav ul {
     list-style: none; /*Untuk menghilangkan list titik*/
     display: flex;
     gap: 3rem;
+    padding: 0;
+    margin: 0;
 }
 
 .logo {
@@ -173,6 +200,7 @@ nav ul li a {
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
+    scroll-margin-top: 80px;
 }
 
 .hero-name {
@@ -196,6 +224,7 @@ nav ul li a {
     background-color: var(--secondaryBackgroundColor);
     padding: var(--sectionPadding);
     padding: 2rem 0;
+    scroll-margin-top: 80px;
 }
 
 .services {
@@ -216,8 +245,8 @@ nav ul li a {
 .services-grid-3 {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 4rem; /* Beri jarak antar card */
-    padding: 0 4rem; /* Jarak kiri & kanan */
+    gap: 2rem; /* Beri jarak antar card */
+    padding: 0 2rem; /* Jarak kiri & kanan */
 }
 
 .services .pre-title {
@@ -251,6 +280,7 @@ nav ul li a {
 #portofolio {
     padding: var(--sectionPadding);
     padding: 2rem 0;
+    scroll-margin-top: 80px;
 }
 
 .portofolio {
@@ -320,6 +350,7 @@ nav ul li a {
     font-weight: 600;
     font-size: 1.4rem;
     margin: 0.5rem 0;
+    text-align: left;
 }
 
 .portofolio-title a svg:hover {
@@ -434,6 +465,8 @@ nav ul li a {
 /* Contacts */
 #contacts {
     padding: var(--sectionPadding);
+    scroll-margin-top: 80px;
+
 }
 
 .contacts {

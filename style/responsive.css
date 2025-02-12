@@ -1,4 +1,4 @@
-@media screen and (max-width: 100px) {
+@media screen and (max-width: 1000px) {
     p {
         font-size: 0.9rem;
         line-height: 1.8rem;
@@ -9,7 +9,7 @@
     }
 
     .skills-right ul li {
-        font-size: 0.rem;
+        font-size: 0.8rem;
     }
 }
 

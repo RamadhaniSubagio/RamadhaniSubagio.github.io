@@ -9,7 +9,7 @@
     }
 
     .skills-right ul li {
-        font-size: 0.rem;
+        font-size: 0.8rem;
     }
 }
 
@@ -17,6 +17,11 @@
     /* Footer Section */
     footer {
         padding: 2rem 0;
+    }
+
+    /*Grid*/
+    .image-gallery {
+        grid-template-columns: 1fr; /* Hanya 1 kolom untuk tampilan vertikal */
     }
 }
 
