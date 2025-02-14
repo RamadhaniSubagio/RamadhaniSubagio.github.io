@@ -364,7 +364,7 @@ nav ul li a {
 .portofolio-tags {
     display: flex;
     gap: 1rem;
-    margin: 1rem 0;
+    margin-bottom: 10px;
 }
 
 .portofolio-tags div {
