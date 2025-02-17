@@ -116,7 +116,7 @@ nav ul li a {
     line-height: 1.6;  /* Tambahkan jarak antar baris */
 }
 
-.image-grid-3 {
+.Property .images-grid-3 {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem; /* Beri jarak antar card */
@@ -125,7 +125,7 @@ nav ul li a {
 
 }
 
-.image-gallery {
+.Property .images-gallery {
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* Membuat 3 kolom sejajar */
     gap: 20px;
@@ -134,7 +134,7 @@ nav ul li a {
     padding: 20px;
 }
 
-.Property .image-gallery img {
+.Property .images-gallery img {
     width: 100%; /* Pastikan gambar penuh dalam kolom */
     height: auto;
     object-fit: cover;
@@ -142,7 +142,7 @@ nav ul li a {
     transition: transform 0.3s ease-in-out;
 }
 
-.Property .image-gallery img:hover {
+.Property .images-gallery img:hover {
     transform: scale(1.05); /* Efek membesar saat hover */
 }
 

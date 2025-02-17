@@ -20,6 +20,9 @@
     }
 
     /*Grid*/
+    .Property .images-gallery {
+        grid-template-columns: 1fr; /* Hanya 1 kolom untuk tampilan vertikal */
+    }
     .image-gallery {
         grid-template-columns: 1fr; /* Hanya 1 kolom untuk tampilan vertikal */
     }
@@ -29,6 +32,10 @@
     /* TItles */
     .section-title {
         font-size: 1.3rem;
+    }
+
+    .images-gallery {
+        grid-template-columns: 1fr; /* Hanya 1 kolom untuk tampilan vertikal */
     }
 
     .pre-title {
