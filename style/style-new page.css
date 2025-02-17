@@ -116,7 +116,7 @@ nav ul li a {
     line-height: 1.6;  /* Tambahkan jarak antar baris */
 }
 
-.Property .image-grid-3 {
+.image-grid-3 {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem; /* Beri jarak antar card */
@@ -125,7 +125,7 @@ nav ul li a {
 
 }
 
-.Property .image-gallery {
+.image-gallery {
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* Membuat 3 kolom sejajar */
     gap: 20px;
